@@ -1,0 +1,2 @@
+require("setting/lsp/clangd")
+

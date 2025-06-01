@@ -1,0 +1,32 @@
+general.live_config_reload = true
+
+# How to download themes
+# mkdir -p ~/.config/alacritty/themes
+# git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+general.import = [
+  "~/.config/alacritty/themes/themes/nord.toml"
+]
+
+[window]
+dimensions = { columns = 250, lines = 75 }
+padding = { x = 8, y = 4 }
+opacity = 0.80
+
+[cursor]
+style = "Beam"
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
+size = 14.0
+offset = { x = 0, y = 2 }
+
+[terminal]
+osc52 = "CopyPaste"
+

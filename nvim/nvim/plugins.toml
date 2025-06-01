@@ -1,0 +1,67 @@
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'Shougo/dpp.vim'
+depends = ['denops.vim']
+
+[[plugins]]
+repo = 'Shougo/dpp-ext-installer'
+depends = ['dpp.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'Shougo/dpp-ext-toml'
+depends = ['dpp.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'Shougo/dpp-ext-lazy'
+depends = ['dpp.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'Shougo/dpp-protocol-git'
+depends = ['dpp.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'neovim/nvim-lspconfig'
+
+[[plugins]]
+repo = 'mason-org/mason.nvim'
+
+[[plugins]]
+repo = 'Shougo/ddc.vim'
+deepends = ['denops.vim']
+
+[[plugins]]
+repo = 'Shougo/ddc-source-around'
+depends = ['ddc.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'Shougo/ddc-source-lsp'
+depends = ['ddc.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'tani/ddc-fuzzy'
+depends = ['ddc.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'Shougo/pum.vim'
+
+[[plugins]]
+repo = 'Shougo/ddc-ui-pum'
+depends = ['pum.vim', 'ddc.vim', 'denops.vim']
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+
+[[plugins]]
+repo = 'mfussenegger/nvim-dap'
+
+[[plugins]]
+repo = 'mfussenegger/nvim-lint'
+
+[[plugins]]
+repo = 'stevearc/conform.nvim'
+
+[[plugins]]
+repo = 'nvim-lualine/lualine.nvim'
+
