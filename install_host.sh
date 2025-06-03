@@ -86,7 +86,6 @@ stow -R -v -d "$DOTFILES_DIR" -t "$HOME/.config" nvim alacritty
 # install denops.vim, dpp.vim, and its extensions
 DPP_ROOT="$HOME/.cache/dpp/repos/github.com"
 
-cd $HOME/.cache/dpp/repos/github.com/
 mkdir -p "${DPP_ROOT}/Shougo"
 mkdir -p "${DPP_ROOT}/vim-denops"
 
