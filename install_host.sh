@@ -17,7 +17,9 @@ clone_or_update_repo() {
     fi
 }
 
+# install system packages
 sudo apt-get update -y
+sudo apt-get install -y python3-pip python3-venv unzip curl
 
 # install GNU Stow
 if ! command -v stow &> /dev/null; then
@@ -62,6 +64,7 @@ if ! command -v nvim &> /dev/null; then
       exit 1
     fi
   fi
+  export PATH="/snap/bin:$PATH"
 	sudo snap install nvim --classic
 	# confirm installation of Neovim
     if ! command -v nvim &> /dev/null; then
