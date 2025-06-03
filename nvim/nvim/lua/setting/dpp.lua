@@ -16,7 +16,7 @@ local dpp = require("dpp")
 local dppBase   = vim.fn.expand("~/.cache/dpp")
 local dpp_config = vim.fn.expand("~/.config/nvim/dpp.ts")
 
-if not dpp.load_state(dppBase) then
+if dpp.load_state(dppBase) then
 
   vim.opt.runtimepath:prepend(denopsSrc)
   dpp.make_state(dppBase, dpp_config)
